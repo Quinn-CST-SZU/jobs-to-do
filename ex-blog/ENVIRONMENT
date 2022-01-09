@@ -1,0 +1,47 @@
+#Windows#
+  -Virtual Box
+#ISO#
+  -debian-live-8.7.1-amd64-standard
+  -debian-8.7.1-amd64-DVD-1
+  -debian-8.7.1-amd64-DVD-2
+  -debian-8.7.1-amd64-DVD-3
+
+#Linux#
+#配置静态地址
+vi /etc/network/interfaces
+  #allow-hotplug eth0
+  auto eth0
+  iface eth0 inet static
+  address 192.168.43.13/24
+  gateway 192.168.43.1
+#配置本地源
+vi /etc/apt/sources.list
+  deb file:///mnt/dvd0 jessie main contrib
+  deb file:///mnt/dvd1 jessie main contrib
+  deb file:///mnt/dvd2 jessie main contrib
+#安装必须软件包
+apt-get update
+apt-get install vim gcc gdb gcc++
+apt-get install mariadb-server-10.0 mariadb-client-10.0
+#安装python3
+wget Python-3.6.2.tgz
+tar -xzvf Python-3.6.2.tgz
+./configure && make install
+ssl - apt-get install libssl-dev
+zlib - apt-get install zlib1g-dev
+sqlite - sqlite3 libsqlite3-dev
+#配置pip3
+visudo
+  ricoo   ALL=(ALL)     NOPASSWD:/usr/local/bin/pip3
+root@pc:/home/ricoo# vi ~/.pip/pip.conf
+  [global]
+  index-url = http://mirrors.aliyun.com/pypi/simple/
+  [install]
+  trusted-host=mirrors.aliyun.com
+#配置mysql - schema.sql
+root@Debin001:~# vi /etc/mysql/my.cnf
+  # bind-address          = 127.0.0.1
+root@Debin001:~# /etc/init.d/mysql restart
+#安装开发包
+sudo pip3 install aohttp aiomysql jinja2
+sudo pip3 install numpy scipy pandas matplotlib seaborn scikit-learn

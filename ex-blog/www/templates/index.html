@@ -1,0 +1,12 @@
+{% extends '__base__.html' %}
+{% block title %} Home {% endblock %}
+{% block content %}
+    {% for u in users %}
+        <div class="uk-card uk-card-default uk-card-hover uk-card-body uk-margin uk-width-1-2@x">
+            <div class="uk-card-badge uk-label">认证博主</div>
+            <h3 class="uk-card-title">用户信息</h3><hr />
+            <p>姓名: {{u.name}}</p>
+            <p>邮箱: {{u.email}}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
