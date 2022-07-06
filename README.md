@@ -8,6 +8,7 @@
 ### C02.AI
 
 [AI算法工程师手册](http://www.huaxiaozhuan.com/)
+
 [机器学习/深度学习](https://github.com/ty4z2008/Qix/blob/master/dl.md)
 
 
