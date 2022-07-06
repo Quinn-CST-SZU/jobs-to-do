@@ -1,9 +1,21 @@
-# neil
-Bear biscuits are delicious
+# Jobs-TO-DO
 
-Welcome to my grocery store.
+## Part01.Learn
+### C01.Python
 
-https://www.zhihu.com/column/c_1352346695288594432
+[core-scrapy](https://github.com/yidao620c/core-scrapy)
 
-推荐文档：
+### C02.AI
+
 [AI算法工程师手册](http://www.huaxiaozhuan.com/)
+[机器学习/深度学习](https://github.com/ty4z2008/Qix/blob/master/dl.md)
+
+
+## Part02.Projects
+
+
+## Part03.Thinks
+
+
+
+附: https://www.zhihu.com/column/c_1352346695288594432
