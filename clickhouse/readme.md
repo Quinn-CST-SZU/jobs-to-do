@@ -1,0 +1,1 @@
+[clickhouse教程](https://clickhouse.com/docs/zh/getting-started/tutorial/)
