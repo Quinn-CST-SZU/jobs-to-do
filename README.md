@@ -6,10 +6,10 @@
 >       (mysql/postgresql/oracle/polardb)
 > 
 > OLAP - OnLine Analytical Processing;数据仓库系统的主要应用，对数据一致性要求不高，侧重决策支持
->       (hive/impala/clickhouse/presto)
+>       (hive/impala/clickhouse/presto/dorisdb-baidu)
 >
 > HTAP - Hybrid Transaction / Analytical Processing;同时支持 OLTP 和 OLAP 场景，需要创新的计算存储框架，在一份数据上保证事务的同时支持实时分析，省去费时的`ETL`过程
->       (tidb-pingcap/alloydb-google/polardb-x-baidu)
+>       (tidb-pingcap/alloydb-google/polardb-x-aliyun)
 >
 
 MPP架构：Massively Parallel Processing；把大规模数据的计算和存储分布到不同的独立的节点中去做
