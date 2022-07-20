@@ -2,7 +2,7 @@
 
 > 该分支用来记录常用的olap查询引擎
 >
-> OLTP - Online Transaction Processing;事务、高可用，以每秒执行的食物和查询sql量来评估
+> OLTP - Online Transaction Processing;事务、高可用，以每秒执行的事务和查询sql量来评估
 >       (mysql/postgresql/oracle/polardb)
 > 
 > OLAP - OnLine Analytical Processing;数据仓库系统的主要应用，对数据一致性要求不高，侧重决策支持
