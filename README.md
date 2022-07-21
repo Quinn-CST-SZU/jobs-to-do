@@ -1,9 +1,3 @@
-# neil
-Bear biscuits are delicious
+# 大数据组件及应用篇
 
-Welcome to my grocery store.
-
-https://www.zhihu.com/column/c_1352346695288594432
-
-推荐文档：
-[AI算法工程师手册](http://www.huaxiaozhuan.com/)
+> 本篇介绍大数据各个常用组件的原理及数仓、元数据等应用信息
